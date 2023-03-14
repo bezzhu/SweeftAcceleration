@@ -29,5 +29,22 @@ class JavaTasksTest {
         assertEquals(-13 ,javaTasks.singleNumber(arr));
         assertEquals(-13 ,javaTasks.singleNumber2(arr));
     }
+    @Test
+    public void minSplitAmount_0(){
+        assertEquals(0, javaTasks.minSplit(0));
+    }
+    @Test
+    public void minSplitAmount_1(){
+        assertEquals(1, javaTasks.minSplit(1));
+    }
+    @Test
+    public void minSplitAmount_22(){
+        assertEquals(3, javaTasks.minSplit(22));
+    }
+    @Test
+    public void minSplitAmount_1243(){
+        assertEquals(29, javaTasks.minSplit(1243));
+    }
+
 
 }
